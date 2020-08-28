@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinSitesEstudos.MainPage">
+
+    <StackLayout>
+
+        <Label
+            Text="SITES PARA ESTUDO"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            FontSize="Large"/>
+
+        <Image x:Name="ImgInstitutoTim" Source="institutoTim.jpg" WidthRequest="320" Margin="20">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="OnTapGestureRecognizerTapped_InstitutoTim"
+                    NumberOfTapsRequired="1"
+                />
+            </Image.GestureRecognizers>            
+        </Image>
+
+        <Image x:Name="ImgCodeCademy" Source="codeCademy.jpg" WidthRequest="320" Margin="20">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="OnTapGestureRecognizerTapped_CodeCademy"
+                    NumberOfTapsRequired="1"
+                />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">            
+            <Image x:Name="ImgUdacity" Source="udacity.png" WidthRequest="150" HeightRequest="150" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                    Tapped="OnTapGestureRecognizerTapped_Udacity"
+                    NumberOfTapsRequired="1"
+                />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="ImgUdemy" Source="udemy.jpg" WidthRequest="150" HeightRequest="150" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                    Tapped="OnTapGestureRecognizerTapped_Udemy"
+                    NumberOfTapsRequired="1"
+                />
+                </Image.GestureRecognizers>
+            </Image>            
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
